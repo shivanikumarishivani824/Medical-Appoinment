@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management Campaign Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Event Management Campaign Page</h1>
+  </header>
+
+  <section class="email-campaign">
+    <h2>Email Campaign</h2>
+    <form>
+      <label for="email-campaign-name">Campaign Name:</label>
+      <input type="text" id="email-campaign-name" name="email-campaign-name" required>
+      
+      <label for="target-age-group">Target Age Group:</label>
+      <select id="target-age-group" name="target-age-group" required>
+        <option value="">Select Age Group</option>
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-44">35-44</option>
+        <option value="45-54">45-54</option>
+        <option value="55-64">55-64</option>
+        <option value="65+">65+</option>
+      </select>
+
+      <label for="target-audience-range">Target Audience Range:</label>
+      <input type="range" id="target-audience-range" name="target-audience-range" min="0" max="100" step="1" value="50" required>
+      <output for="target-audience-range">50</output>
+
+      <button type="submit">Submit Email Campaign</button>
+    </form>
+  </section>
+
+  <section class="social-media-campaign">
+    <h2>Social Media Campaign</h2>
+    <form>
+      <label for="social-media-campaign-name">Campaign Name:</label>
+      <input type="text" id="social-media-campaign-name" name="social-media-campaign-name" required>
+      
+      <label for="target-platforms">Target Platforms:</label>
+      <input type="checkbox" id="facebook" name="platform" value="Facebook">
+      <label for="facebook">Facebook</label>
+      <input type="checkbox" id="twitter" name="platform" value="Twitter">
+      <label for="twitter">Twitter</label>
+      <input type="checkbox" id="instagram" name="platform" value="Instagram">
+      <label for="instagram">Instagram</label>
+      <!-- Add more platforms as needed -->
+
+      <label for="target-audience-range">Target Audience Range:</label>
+      <input type="range" id="target-audience-range" name="target-audience-range" min="0" max="100" step="1" value="50" required>
+      <output for="target-audience-range">50</output>
+
+      <button type="submit">Submit Social Media Campaign</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Event Management Company</p>
+  </footer>
+
+</body>
+</html>
